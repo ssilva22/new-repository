@@ -1,0 +1,218 @@
+Javascript is a high level,object-oriented programming, multi-paradigm programming challenge.
+The role of Javascriptin Web Development.
+
+Html:Content(Nouns)
+CSS:Presentation(Adjectives)
+JS:Building Web Applications(verbs)
+
+There's nothing you can't do with JS.
+
+React,Angular and vue are examples of front-end JS frameworks
+Node.js is an example of a back-end JS framework.
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+///////////======ES5,ES6, AND ESNEXT===========////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+A brief history of JavaScript
+
+(1995)Brendan Eich creates the very first version of JavaScript in
+just 10 days.It was called Mocha,but already had many
+fundamental features of modern JavaScript!.
+
+(1996)Mocha changes to LiveScript and then to Javascript,in order
+to attract Java developers.However, JavaScript has almost
+nothing to do with Java.
+
+(1997)Microsoft launches IE,copyinh JavaScript from Netscape
+and calling it JScript;
+
+(1997)With a need to standardize the language,ECMA releases
+ECMAscript (ES1),the first official standard for Javascript
+(EcmaScript is the standard and JS is the actual language)
+
+(2009)ES5 is released with lots of great features;
+
+(2015)ES6/ES2015 was released and was the biggest update ever.
+
+The Good Thing About JavaScript that it has backwards compatibility
+So you can run an ES1 with ES6 without any issues.
+
+How To Use Modern JavaScript Today.
+
+During Development:Simply use the latest Google Chrome!
+
+During Production:Use Babel to transpile and polyfill your code
+(converting to ES5 to ensure browser compatibility).
+
+ES6+ may not be supported by older browsers
+
+ES6 compatibility Table;
+
+codewars.com//Good for practicing
+
+
+
+
+How to think like a developer
+
+-Always stay calm and slow down,dont'jump at a problem without a plan
+
+-Take a very logical and rational approach
+
+Follow these 4 steps:
+
+Step 1-Make sure you understand the problem
+
+
+Example:
+Project Manager:"We need a function that reverses whatever we pass into it
+
+-What does "whatever" evenmean in this context?
+What should be reversed?Answer:Only strings,numbers.and arrays make sense 
+to reverse.
+
+-What to do if something else is passed in?
+
+-What should be returned?Should it always be a string?
+
+-How do you reverse a number,string,etc
+
+Step 2:Divide and conquer
+-Break a big problem into smaller solutions
+
+Sub-problems:
+
+*Check if argument is a number,a string, or an array
+*Implement reversing a number.
+*Implement reversing a string.
+*Implemet reversing an array.
+*Return reversed value.
+
+Step 3:Don't be afraid to do as much research as possible
+
+For bigger problems,write pseudo-code before writing the actual code
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+///////////======Section 2------------------////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////
+////////////////////////////////////////////////////////
+///////////======Debugging-----------------////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+console.warn();
+console.error();
+//prompt function always returns a string
+console.table();
+breakpoints are used to identify bugs
+
+/////////////////////////////////////////////////////////////////////////////
+///////////======Debugging-----------------////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
+/*What is DOM?
+DOM:It stands for Document Obkect Model which is a structured
+representation of HTML documents which allows JS to access
+HTML elements and Styles to manipulate them
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+///////////======DOM STRUCTURE-----------------////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+document.querySelector();
+
+dom Methods and properties arent part of JS
+
+/////////////////////////////////////////////////////////////////////////////
+///////////======DOM STRUCTURE-----------------////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+*In programming, there's high level and low level programming languages
+ C is an instance of a low level programming languague as the developer has to manage
+ the resources manually
+
+ Python and JavaScript are instances of high level languages as you do not
+ have to worry about storing variables since it's stored automatically.
+
+ Garbage-collection is an algorithm that makes sure to clean unnecessary usage of memory
+
+ Multi-paradigm languages are approaches and mindsets that will define the structuring
+ of your code,which will direct your coding style and technique
+
+ Procedural Programming
+
+ Object Oriented Programming
+
+ Functional Programming
+
+ Imperative vs Declarative
+
+ In Javascript, everything is an object except for primitive values
+
+ Javascript is a langguage with first class functions which means It's a language where 
+ functions are simply treated as variables.We can pass them into other functions,and return
+ them from functions
+
+ JavaScript is a concurrency model where the engine handles multiple tasks happening at the same time.
+
+ JavaScripy is a one single thread language which can only do one thing at a time 
+
+In order to get non-blocking behavior,javaScript uses an event loop which takes long running
+rasks,executes them in the "background", and puts them back in the main thread once they are 
+finished.  
+
+What is  javaScript engine?.
+-A javaScript engine is a program that executes JS code
+
+All JS engines have a call stack and a heap
+A call Stack is where our code is executed and the heap is where the objects are stored
+Compilation vs interpretation
+
+Compilation is where the entire code is converted into machine code at once,and written to a binary file that
+can be executed by a computer.
+
+Interpretation:An interpreter runs through the source code and executes it line by line.
+
+Just-in-Time compilation:Entire code is converted into machine code at onece,then executed immediately
+
+When a piece of code is entered into an engine theres a process of parsing,compilation and execution.
+
+---JS runtime.----
+
+C
+An execution context is an environment in which a piece of JS is executed.
+Stores all the necessary information for some code to be executed.
+
+Scoping and Scope in Javascript
+Scoping controls how our program's variables are organized and accessed
+
+Lexical Scoping:Scoping is ontrolled by placement of functions and blocs in the code
+
+Scope:Space or environment in which a certain variable is declared
+
+Scope of a variable:Region of our code where a certain variable can be accesed.
+
+Hoisting:Makes some types of variables accessible in the code before they are actually 
+declared."Variables lifted to the top of their scope"
+
+Before execution,code is scanned for variable declarations,and for each variable,a new property is created
+in the variable environment object.
+
+The this keyword is a special variable that is created for every execution context.
+It takes the value of the owner of the function in which the function is used
+
+This method isn't static and it depends on how the function is called,and it's value is only assigned when the function
+is actually called
